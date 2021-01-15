@@ -3,23 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Library</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
-    <h1>Library</h1>
-    <div id="inputs">
-      <p>Please input book info into the following fields.</p>
-      <form>
-        <label for="title">Book Title: </label>
-        <input type="text" id="title" name="title">
-        <label for="author">Author: </label>
-        <input type="text" id="author" name="author">
-        <label for="pages">Page Count: </label>
-        <input type="text" id="pages" name="pages">
-        <button type="submit">Submit</button>
-      </form>
+    <div class="container">
+        <div class='row'>
+            <h1>Library</h1>
+        </div>
+        <div class='row'>
+            <p>Please input book info into the following fields.</p>
+            <form>
+            <div class="formBox">
+                <label for="title">Book Title: </label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="formBox">
+                <label for="author">Author: </label>
+                <input type="text" id="author" name="author">
+            </div>
+            <div class="formBox">
+                <label for="pages">Page Count: </label>
+                <input type="text" id="pages" name="pages">
+            </div>
+            <div class="formBox">
+                <label for="read">Read?:</label>
+                <input type="checkbox" id="read" name="read">
+            </div>
+            <div class="formBox">
+                <button type="submit">Submit</button>
+            </div>
+            </form>
+        </div>
+        <div class='row'>
+            <div class="movies"></div>
+        </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
